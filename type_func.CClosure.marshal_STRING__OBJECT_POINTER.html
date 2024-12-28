@@ -1,0 +1,397 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/type_func.CClosure.marshal_STRING__OBJECT_POINTER.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.CClosure.marshal_STRING__OBJECT_POINTER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="GObject.CClosure.marshal_STRING__OBJECT_POINTER"/>
+  <meta property="og:description" content="Reference for GObject.CClosure.marshal_STRING__OBJECT_POINTER"/>
+  <meta name="twitter:title" content="GObject.CClosure.marshal_STRING__OBJECT_POINTER"/>
+  <meta name="twitter:description" content="Reference for GObject.CClosure.marshal_STRING__OBJECT_POINTER"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="struct.CClosure.html">CClosure</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="method" href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXED.html">marshal_BOOLEAN__BOXED_BOXED</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXEDv.html">marshal_BOOLEAN__BOXED_BOXEDv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_BOOLEAN__FLAGS.html">marshal_BOOLEAN__FLAGS</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_BOOLEAN__FLAGSv.html">marshal_BOOLEAN__FLAGSv</a>
+  
+    <a class="method current" href="type_func.CClosure.marshal_STRING__OBJECT_POINTER.html">marshal_STRING__OBJECT_POINTER</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_STRING__OBJECT_POINTERv.html">marshal_STRING__OBJECT_POINTERv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__BOOLEAN.html">marshal_VOID__BOOLEAN</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__BOOLEANv.html">marshal_VOID__BOOLEANv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__BOXED.html">marshal_VOID__BOXED</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__BOXEDv.html">marshal_VOID__BOXEDv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__CHAR.html">marshal_VOID__CHAR</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__CHARv.html">marshal_VOID__CHARv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__DOUBLE.html">marshal_VOID__DOUBLE</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__DOUBLEv.html">marshal_VOID__DOUBLEv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__ENUM.html">marshal_VOID__ENUM</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__ENUMv.html">marshal_VOID__ENUMv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__FLAGS.html">marshal_VOID__FLAGS</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__FLAGSv.html">marshal_VOID__FLAGSv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__FLOAT.html">marshal_VOID__FLOAT</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__FLOATv.html">marshal_VOID__FLOATv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__INT.html">marshal_VOID__INT</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__INTv.html">marshal_VOID__INTv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__LONG.html">marshal_VOID__LONG</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__LONGv.html">marshal_VOID__LONGv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__OBJECT.html">marshal_VOID__OBJECT</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__OBJECTv.html">marshal_VOID__OBJECTv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__PARAM.html">marshal_VOID__PARAM</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__PARAMv.html">marshal_VOID__PARAMv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__POINTER.html">marshal_VOID__POINTER</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__POINTERv.html">marshal_VOID__POINTERv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__STRING.html">marshal_VOID__STRING</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__STRINGv.html">marshal_VOID__STRINGv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UCHAR.html">marshal_VOID__UCHAR</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UCHARv.html">marshal_VOID__UCHARv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UINT.html">marshal_VOID__UINT</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UINT_POINTER.html">marshal_VOID__UINT_POINTER</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UINT_POINTERv.html">marshal_VOID__UINT_POINTERv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__UINTv.html">marshal_VOID__UINTv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__ULONG.html">marshal_VOID__ULONG</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__ULONGv.html">marshal_VOID__ULONGv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__VARIANT.html">marshal_VOID__VARIANT</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__VARIANTv.html">marshal_VOID__VARIANTv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__VOID.html">marshal_VOID__VOID</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_VOID__VOIDv.html">marshal_VOID__VOIDv</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_generic.html">marshal_generic</a>
+  
+    <a class="method" href="type_func.CClosure.marshal_generic_va.html">marshal_generic_va</a>
+  
+    <a class="method" href="type_func.CClosure.new.html">new</a>
+  
+    <a class="method" href="type_func.CClosure.new_object.html">new_object</a>
+  
+    <a class="method" href="type_func.CClosure.new_object_swap.html">new_object_swap</a>
+  
+    <a class="method" href="type_func.CClosure.new_swap.html">new_swap</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Function</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span><a href="struct.CClosure.html">CClosure</a><span class="sep"></span>marshal_STRING__OBJECT_POINTER</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+    <div class="declaration toggle-wrapper">
+      <h4 id="declaration" style="display:flex;">
+        Declaration
+        <a href="#declaration" class="anchor"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gmarshal.h#L382">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <pre><code><div class="highlight"><pre><span></span><span class="kt">void</span>
+<span class="n">g_cclosure_marshal_STRING__OBJECT_POINTER</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">GClosure</span><span class="o">*</span><span class="w"> </span><span class="n">closure</span><span class="p">,</span>
+<span class="w">  </span><span class="n">GValue</span><span class="o">*</span><span class="w"> </span><span class="n">return_value</span><span class="p">,</span>
+<span class="w">  </span><span class="n">guint</span><span class="w"> </span><span class="n">n_param_values</span><span class="p">,</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">GValue</span><span class="o">*</span><span class="w"> </span><span class="n">param_values</span><span class="p">,</span>
+<span class="w">  </span><span class="n">gpointer</span><span class="w"> </span><span class="n">invocation_hint</span><span class="p">,</span>
+<span class="w">  </span><span class="n">gpointer</span><span class="w"> </span><span class="n">marshal_data</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 id="description" style="display:flex;">
+        Description
+        <a href="#description" class="anchor"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gmarshal.c#L2262">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>A <code>GClosureMarshal</code> function for use with signals with handlers that
+take a <code>GObject</code> and a pointer and produce a string.  It is highly
+unlikely that your signal handler fits this&nbsp;description.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+          <dt class="arg-name"><code>closure</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="struct.Closure.html"><code>GClosure</code></a></p>
+            <p>A <code>GClosure</code>.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>return_value</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="struct.Value.html"><code>GValue</code></a></p>
+            <p>A <code>GValue</code> to store the return value. May be <code>NULL</code>
+  if the callback of closure doesn&#8217;t return a&nbsp;value.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>n_param_values</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>guint</code></p>
+            <p>The length of the <code>param_values</code> array.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>param_values</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="struct.Value.html"><code>GValue</code></a></p>
+            <p>An array of <code>GValues</code> holding the arguments
+  on which to invoke the callback of&nbsp;closure.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>invocation_hint</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gpointer</code></p>
+            <p>The invocation hint given as the last argument to&nbsp;g_closure_invoke().</p>
+            <table>
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>marshal_data</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gpointer</code></p>
+            <p>Additional data specified when registering the
+  marshaller, see <code>g_closure_set_marshal()</code> and&nbsp;g_closure_set_meta_marshal().</p>
+            <table>
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the function.</td></tr>
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/type_func.CClosure.marshal_STRING__OBJECT_POINTER.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:47 GMT -->
+</html>

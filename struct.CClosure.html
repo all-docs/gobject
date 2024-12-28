@@ -1,0 +1,858 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/struct.CClosure.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:56:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.CClosure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="GObject.CClosure"/>
+  <meta property="og:description" content="Reference for GObject.CClosure"/>
+  <meta name="twitter:title" content="GObject.CClosure"/>
+  <meta name="twitter:description" content="Reference for GObject.CClosure"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="struct.CClosure.html#description">CClosure</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXED.html">marshal_BOOLEAN__BOXED_BOXED</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXEDv.html">marshal_BOOLEAN__BOXED_BOXEDv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_BOOLEAN__FLAGS.html">marshal_BOOLEAN__FLAGS</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_BOOLEAN__FLAGSv.html">marshal_BOOLEAN__FLAGSv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_STRING__OBJECT_POINTER.html">marshal_STRING__OBJECT_POINTER</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_STRING__OBJECT_POINTERv.html">marshal_STRING__OBJECT_POINTERv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__BOOLEAN.html">marshal_VOID__BOOLEAN</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__BOOLEANv.html">marshal_VOID__BOOLEANv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__BOXED.html">marshal_VOID__BOXED</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__BOXEDv.html">marshal_VOID__BOXEDv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__CHAR.html">marshal_VOID__CHAR</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__CHARv.html">marshal_VOID__CHARv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__DOUBLE.html">marshal_VOID__DOUBLE</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__DOUBLEv.html">marshal_VOID__DOUBLEv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__ENUM.html">marshal_VOID__ENUM</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__ENUMv.html">marshal_VOID__ENUMv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__FLAGS.html">marshal_VOID__FLAGS</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__FLAGSv.html">marshal_VOID__FLAGSv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__FLOAT.html">marshal_VOID__FLOAT</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__FLOATv.html">marshal_VOID__FLOATv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__INT.html">marshal_VOID__INT</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__INTv.html">marshal_VOID__INTv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__LONG.html">marshal_VOID__LONG</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__LONGv.html">marshal_VOID__LONGv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__OBJECT.html">marshal_VOID__OBJECT</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__OBJECTv.html">marshal_VOID__OBJECTv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__PARAM.html">marshal_VOID__PARAM</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__PARAMv.html">marshal_VOID__PARAMv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__POINTER.html">marshal_VOID__POINTER</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__POINTERv.html">marshal_VOID__POINTERv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__STRING.html">marshal_VOID__STRING</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__STRINGv.html">marshal_VOID__STRINGv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UCHAR.html">marshal_VOID__UCHAR</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UCHARv.html">marshal_VOID__UCHARv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UINT.html">marshal_VOID__UINT</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UINT_POINTER.html">marshal_VOID__UINT_POINTER</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UINT_POINTERv.html">marshal_VOID__UINT_POINTERv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__UINTv.html">marshal_VOID__UINTv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__ULONG.html">marshal_VOID__ULONG</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__ULONGv.html">marshal_VOID__ULONGv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__VARIANT.html">marshal_VOID__VARIANT</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__VARIANTv.html">marshal_VOID__VARIANTv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__VOID.html">marshal_VOID__VOID</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_VOID__VOIDv.html">marshal_VOID__VOIDv</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_generic.html">marshal_generic</a>
+  
+    <a class="func" href="type_func.CClosure.marshal_generic_va.html">marshal_generic_va</a>
+  
+    <a class="func" href="type_func.CClosure.new.html">new</a>
+  
+    <a class="func" href="type_func.CClosure.new_object.html">new_object</a>
+  
+    <a class="func" href="type_func.CClosure.new_object_swap.html">new_object_swap</a>
+  
+    <a class="func" href="type_func.CClosure.new_swap.html">new_swap</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Struct</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span>CClosure</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+      <div class="toggle-wrapper">
+        <h4 style="display:flex;" id="description">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gclosure.h#L156">[src]</a>
+          
+        </h4>
+
+        <pre><code><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">GCClosure</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">GClosure</span><span class="w"> </span><span class="n">closure</span><span class="p">;</span>
+<span class="w">  </span><span class="n">gpointer</span><span class="w"> </span><span class="n">callback</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</code></pre>
+
+        <div class="docblock">
+          <p>A <code>GCClosure</code> is a specialization of <code>GClosure</code> for C function&nbsp;callbacks.</p>
+        </div>
+
+        
+        <div class="toggle-wrapper">
+          <h6 style="display:flex;">
+            Structure members
+            
+          </h6>
+
+          <div class="docblock">
+            <dl>
+            
+              <dt><code>closure</code></dt>
+              <dd><p>The <code>GClosure</code>.</p></dd>
+            
+              <dt><code>callback</code></dt>
+              <dd><p>The callback&nbsp;function.</p></dd>
+            
+            </dl>
+          </div>
+        </div>
+        
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXED.html">g_cclosure_marshal_BOOLEAN__BOXED_BOXED</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with handlers that
+take two boxed pointers as arguments and return a boolean.  If you
+have such a signal, you will probably also need to use an
+accumulator, such as&nbsp;g_signal_accumulator_true_handled().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_BOOLEAN__BOXED_BOXEDv.html">g_cclosure_marshal_BOOLEAN__BOXED_BOXEDv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_BOOLEAN__BOXED_BOXED().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_BOOLEAN__FLAGS.html">g_cclosure_marshal_BOOLEAN__FLAGS</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with handlers that
+take a flags type as an argument and return a boolean.  If you have
+such a signal, you will probably also need to use an accumulator,
+such as&nbsp;g_signal_accumulator_true_handled().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_BOOLEAN__FLAGSv.html">g_cclosure_marshal_BOOLEAN__FLAGSv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_BOOLEAN__FLAGS().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_STRING__OBJECT_POINTER.html">g_cclosure_marshal_STRING__OBJECT_POINTER</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with handlers that
+take a <code>GObject</code> and a pointer and produce a string.  It is highly
+unlikely that your signal handler fits this&nbsp;description.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_STRING__OBJECT_POINTERv.html">g_cclosure_marshal_STRING__OBJECT_POINTERv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_STRING__OBJECT_POINTER().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__BOOLEAN.html">g_cclosure_marshal_VOID__BOOLEAN</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+boolean&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__BOOLEANv.html">g_cclosure_marshal_VOID__BOOLEANv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__BOOLEAN().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__BOXED.html">g_cclosure_marshal_VOID__BOXED</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+argument which is any boxed pointer&nbsp;type.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__BOXEDv.html">g_cclosure_marshal_VOID__BOXEDv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__BOXED().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__CHAR.html">g_cclosure_marshal_VOID__CHAR</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+character&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__CHARv.html">g_cclosure_marshal_VOID__CHARv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__CHAR().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__DOUBLE.html">g_cclosure_marshal_VOID__DOUBLE</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with one
+double-precision floating point&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__DOUBLEv.html">g_cclosure_marshal_VOID__DOUBLEv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__DOUBLE().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__ENUM.html">g_cclosure_marshal_VOID__ENUM</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+argument with an enumerated&nbsp;type.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__ENUMv.html">g_cclosure_marshal_VOID__ENUMv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__ENUM().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__FLAGS.html">g_cclosure_marshal_VOID__FLAGS</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+argument with a flags&nbsp;types.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__FLAGSv.html">g_cclosure_marshal_VOID__FLAGSv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__FLAGS().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__FLOAT.html">g_cclosure_marshal_VOID__FLOAT</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with one
+single-precision floating point&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__FLOATv.html">g_cclosure_marshal_VOID__FLOATv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__FLOAT().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__INT.html">g_cclosure_marshal_VOID__INT</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+integer&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__INTv.html">g_cclosure_marshal_VOID__INTv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__INT().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__LONG.html">g_cclosure_marshal_VOID__LONG</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with with a single
+long integer&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__LONGv.html">g_cclosure_marshal_VOID__LONGv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__LONG().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__OBJECT.html">g_cclosure_marshal_VOID__OBJECT</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+<code>GObject</code> argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__OBJECTv.html">g_cclosure_marshal_VOID__OBJECTv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__OBJECT().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__PARAM.html">g_cclosure_marshal_VOID__PARAM</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+argument of type <code>GParamSpec</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__PARAMv.html">g_cclosure_marshal_VOID__PARAMv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__PARAM().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__POINTER.html">g_cclosure_marshal_VOID__POINTER</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single raw
+pointer argument&nbsp;type.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__POINTERv.html">g_cclosure_marshal_VOID__POINTERv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__POINTER().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__STRING.html">g_cclosure_marshal_VOID__STRING</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single string&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__STRINGv.html">g_cclosure_marshal_VOID__STRINGv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__STRING().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UCHAR.html">g_cclosure_marshal_VOID__UCHAR</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+unsigned character&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UCHARv.html">g_cclosure_marshal_VOID__UCHARv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__UCHAR().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UINT.html">g_cclosure_marshal_VOID__UINT</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with with a single
+unsigned integer&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UINT_POINTER.html">g_cclosure_marshal_VOID__UINT_POINTER</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with an unsigned int
+and a pointer as&nbsp;arguments.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UINT_POINTERv.html">g_cclosure_marshal_VOID__UINT_POINTERv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__UINT_POINTER().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__UINTv.html">g_cclosure_marshal_VOID__UINTv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__UINT().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__ULONG.html">g_cclosure_marshal_VOID__ULONG</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+unsigned long integer&nbsp;argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__ULONGv.html">g_cclosure_marshal_VOID__ULONGv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__ULONG().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__VARIANT.html">g_cclosure_marshal_VOID__VARIANT</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with a single
+<code>GVariant</code> argument.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__VARIANTv.html">g_cclosure_marshal_VOID__VARIANTv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__VARIANT().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__VOID.html">g_cclosure_marshal_VOID__VOID</a></h6>
+        <div class="docblock">
+          <p>A <code>GClosureMarshal</code> function for use with signals with no&nbsp;arguments.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_VOID__VOIDv.html">g_cclosure_marshal_VOID__VOIDv</a></h6>
+        <div class="docblock">
+          <p>The <code>GVaClosureMarshal</code> equivalent to&nbsp;g_cclosure_marshal_VOID__VOID().</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_generic.html">g_cclosure_marshal_generic</a></h6>
+        <div class="docblock">
+          <p>A generic marshaller function implemented via
+<a href="http://sourceware.org/libffi/">libffi</a>.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.30</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.marshal_generic_va.html">g_cclosure_marshal_generic_va</a></h6>
+        <div class="docblock">
+          <p>A generic <code>GVaClosureMarshal</code> function implemented via
+<a href="http://sourceware.org/libffi/">libffi</a>.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.30</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.new.html">g_cclosure_new</a></h6>
+        <div class="docblock">
+          <p>Creates a new closure which invokes <code>callback_func</code> with <code>user_data</code> as
+the last&nbsp;parameter.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.new_object.html">g_cclosure_new_object</a></h6>
+        <div class="docblock">
+          <p>A variant of <code>g_cclosure_new()</code> which uses <code>object</code> as <code>user_data</code> and
+calls <code>g_object_watch_closure()</code> on <code>object</code> and the created
+closure. This function is useful when you have a callback closely
+associated with a <code>GObject</code>, and want the callback to no longer run
+after the object is is&nbsp;freed.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.new_object_swap.html">g_cclosure_new_object_swap</a></h6>
+        <div class="docblock">
+          <p>A variant of <code>g_cclosure_new_swap()</code> which uses <code>object</code> as <code>user_data</code>
+and calls <code>g_object_watch_closure()</code> on <code>object</code> and the created
+closure. This function is useful when you have a callback closely
+associated with a <code>GObject</code>, and want the callback to no longer run
+after the object is is&nbsp;freed.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.CClosure.new_swap.html">g_cclosure_new_swap</a></h6>
+        <div class="docblock">
+          <p>Creates a new closure which invokes <code>callback_func</code> with <code>user_data</code> as
+the first&nbsp;parameter.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/struct.CClosure.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:57:11 GMT -->
+</html>

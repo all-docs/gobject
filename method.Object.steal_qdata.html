@@ -1,0 +1,350 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Object.steal_qdata.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.Object.steal_qdata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta priority="og:title" content="GObject.Object.steal_qdata"/>
+  <meta priority="og:description" content="Reference for GObject.Object.steal_qdata"/>
+  <meta name="twitter:title" content="GObject.Object.steal_qdata"/>
+  <meta name="twitter:description" content="Reference for GObject.Object.steal_qdata"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.Object.html">Object</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Object.add_toggle_ref.html">add_toggle_ref</a>
+  
+    <a class="method" href="method.Object.add_weak_pointer.html">add_weak_pointer</a>
+  
+    <a class="method" href="method.Object.bind_property.html">bind_property</a>
+  
+    <a class="method" href="method.Object.bind_property_full.html">bind_property_full</a>
+  
+    <a class="method" href="method.Object.bind_property_with_closures.html">bind_property_with_closures</a>
+  
+    <a class="method" href="method.Object.connect.html">connect</a>
+  
+    <a class="method" href="method.Object.disconnect.html">disconnect</a>
+  
+    <a class="method" href="method.Object.dup_data.html">dup_data</a>
+  
+    <a class="method" href="method.Object.dup_qdata.html">dup_qdata</a>
+  
+    <a class="method" href="method.Object.force_floating.html">force_floating</a>
+  
+    <a class="method" href="method.Object.freeze_notify.html">freeze_notify</a>
+  
+    <a class="method" href="method.Object.get.html">get</a>
+  
+    <a class="method" href="method.Object.get_data.html">get_data</a>
+  
+    <a class="method" href="method.Object.get_property.html">get_property</a>
+  
+    <a class="method" href="method.Object.get_qdata.html">get_qdata</a>
+  
+    <a class="method" href="method.Object.get_valist.html">get_valist</a>
+  
+    <a class="method" href="method.Object.getv.html">getv</a>
+  
+    <a class="method" href="method.Object.is_floating.html">is_floating</a>
+  
+    <a class="method" href="method.Object.notify.html">notify</a>
+  
+    <a class="method" href="method.Object.notify_by_pspec.html">notify_by_pspec</a>
+  
+    <a class="method" href="method.Object.ref.html">ref</a>
+  
+    <a class="method" href="method.Object.ref_sink.html">ref_sink</a>
+  
+    <a class="method" href="method.Object.remove_toggle_ref.html">remove_toggle_ref</a>
+  
+    <a class="method" href="method.Object.remove_weak_pointer.html">remove_weak_pointer</a>
+  
+    <a class="method" href="method.Object.replace_data.html">replace_data</a>
+  
+    <a class="method" href="method.Object.replace_qdata.html">replace_qdata</a>
+  
+    <a class="method" href="method.Object.run_dispose.html">run_dispose</a>
+  
+    <a class="method" href="method.Object.set.html">set</a>
+  
+    <a class="method" href="method.Object.set_data.html">set_data</a>
+  
+    <a class="method" href="method.Object.set_data_full.html">set_data_full</a>
+  
+    <a class="method" href="method.Object.set_property.html">set_property</a>
+  
+    <a class="method" href="method.Object.set_qdata.html">set_qdata</a>
+  
+    <a class="method" href="method.Object.set_qdata_full.html">set_qdata_full</a>
+  
+    <a class="method" href="method.Object.set_valist.html">set_valist</a>
+  
+    <a class="method" href="method.Object.setv.html">setv</a>
+  
+    <a class="method" href="method.Object.steal_data.html">steal_data</a>
+  
+    <a class="method current" href="method.Object.steal_qdata.html">steal_qdata</a>
+  
+    <a class="method" href="method.Object.take_ref.html">take_ref</a>
+  
+    <a class="method" href="method.Object.thaw_notify.html">thaw_notify</a>
+  
+    <a class="method" href="method.Object.unref.html">unref</a>
+  
+    <a class="method" href="method.Object.watch_closure.html">watch_closure</a>
+  
+    <a class="method" href="method.Object.weak_ref.html">weak_ref</a>
+  
+    <a class="method" href="method.Object.weak_unref.html">weak_unref</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span><a href="class.Object.html">Object</a><span class="sep"></span>steal_qdata</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gobject.h#L577">[src]</a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gpointer</span>
+<span class="n">g_object_steal_qdata</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">GObject</span><span class="o">*</span><span class="w"> </span><span class="n">object</span><span class="p">,</span>
+<span class="w">  </span><span class="n">GQuark</span><span class="w"> </span><span class="n">quark</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gobject.c#L4686">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>This function gets back user data pointers stored via
+<code>g_object_set_qdata()</code> and removes the <code>data</code> from object
+without invoking its <code>destroy()</code> function (if any was
+set).
+Usually, calling this function is only required to update
+user data pointers with a destroy notifier, for&nbsp;example:</p>
+<div class="highlight"><pre><span></span><span class="kt">void</span>
+<span class="nf">object_add_to_user_list</span><span class="w"> </span><span class="p">(</span><span class="n">GObject</span><span class="w">     </span><span class="o">*</span><span class="n">object</span><span class="p">,</span>
+<span class="w">                         </span><span class="k">const</span><span class="w"> </span><span class="n">gchar</span><span class="w"> </span><span class="o">*</span><span class="n">new_string</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">// the quark, naming the object data</span>
+<span class="w">  </span><span class="n">GQuark</span><span class="w"> </span><span class="n">quark_string_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_quark_from_static_string</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;my-string-list&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// retrieve the old string list</span>
+<span class="w">  </span><span class="n">GList</span><span class="w"> </span><span class="o">*</span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_object_steal_qdata</span><span class="w"> </span><span class="p">(</span><span class="n">object</span><span class="p">,</span><span class="w"> </span><span class="n">quark_string_list</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// prepend new string</span>
+<span class="w">  </span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_list_prepend</span><span class="w"> </span><span class="p">(</span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="n">g_strdup</span><span class="w"> </span><span class="p">(</span><span class="n">new_string</span><span class="p">));</span>
+<span class="w">  </span><span class="c1">// this changed &#39;list&#39;, so we need to set it again</span>
+<span class="w">  </span><span class="n">g_object_set_qdata_full</span><span class="w"> </span><span class="p">(</span><span class="n">object</span><span class="p">,</span><span class="w"> </span><span class="n">quark_string_list</span><span class="p">,</span><span class="w"> </span><span class="n">list</span><span class="p">,</span><span class="w"> </span><span class="n">free_string_list</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span>
+<span class="nf">free_string_list</span><span class="w"> </span><span class="p">(</span><span class="n">gpointer</span><span class="w"> </span><span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GList</span><span class="w"> </span><span class="o">*</span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span><span class="p">;</span><span class="w"> </span><span class="n">node</span><span class="p">;</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span>
+<span class="w">    </span><span class="n">g_free</span><span class="w"> </span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+<span class="w">  </span><span class="n">g_list_free</span><span class="w"> </span><span class="p">(</span><span class="n">list</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Using <code>g_object_get_qdata()</code> in the above example, instead of
+<code>g_object_steal_qdata()</code> would have left the destroy function set,
+and thus the partial string list would have been freed upon&nbsp;g_object_set_qdata_full().</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+          <dt class="arg-name"><code>quark</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="javascript:void(0)" data-link="alias.Quark.html" data-namespace="GLib" class="external"><code>GQuark</code></a></p>
+            <p>A <code>GQuark</code>, naming the user data&nbsp;pointer.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <div class="returns">
+          <div class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gpointer</code></p>
+            <p>The user data pointer set, or <code>NULL</code>.</p>
+          </div>
+          <div>
+            <table>
+            
+            
+            
+            <tr><td title="transfer: full">The caller of the method takes ownership of the returned data, and is responsible for freeing it.</td></tr>
+            <tr><td>The return value can be <code>NULL</code>.</td></tr>
+            
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Object.steal_qdata.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:45 GMT -->
+</html>

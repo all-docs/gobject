@@ -1,0 +1,1152 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/struct.Value.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:57:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.Value</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="GObject.Value"/>
+  <meta property="og:description" content="Reference for GObject.Value"/>
+  <meta name="twitter:title" content="GObject.Value"/>
+  <meta name="twitter:description" content="Reference for GObject.Value"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="struct.Value.html#description">Value</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.Value.register_transform_func.html">register_transform_func</a>
+  
+    <a class="func" href="type_func.Value.type_compatible.html">type_compatible</a>
+  
+    <a class="func" href="type_func.Value.type_transformable.html">type_transformable</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Value.copy.html">copy</a>
+  
+    <a class="method" href="method.Value.dup_boxed.html">dup_boxed</a>
+  
+    <a class="method" href="method.Value.dup_object.html">dup_object</a>
+  
+    <a class="method" href="method.Value.dup_param.html">dup_param</a>
+  
+    <a class="method" href="method.Value.dup_string.html">dup_string</a>
+  
+    <a class="method" href="method.Value.dup_variant.html">dup_variant</a>
+  
+    <a class="method" href="method.Value.fits_pointer.html">fits_pointer</a>
+  
+    <a class="method" href="method.Value.get_boolean.html">get_boolean</a>
+  
+    <a class="method" href="method.Value.get_boxed.html">get_boxed</a>
+  
+    <a class="method" href="method.Value.get_char.html">get_char</a>
+  
+    <a class="method" href="method.Value.get_double.html">get_double</a>
+  
+    <a class="method" href="method.Value.get_enum.html">get_enum</a>
+  
+    <a class="method" href="method.Value.get_flags.html">get_flags</a>
+  
+    <a class="method" href="method.Value.get_float.html">get_float</a>
+  
+    <a class="method" href="method.Value.get_gtype.html">get_gtype</a>
+  
+    <a class="method" href="method.Value.get_int.html">get_int</a>
+  
+    <a class="method" href="method.Value.get_int64.html">get_int64</a>
+  
+    <a class="method" href="method.Value.get_long.html">get_long</a>
+  
+    <a class="method" href="method.Value.get_object.html">get_object</a>
+  
+    <a class="method" href="method.Value.get_param.html">get_param</a>
+  
+    <a class="method" href="method.Value.get_pointer.html">get_pointer</a>
+  
+    <a class="method" href="method.Value.get_schar.html">get_schar</a>
+  
+    <a class="method" href="method.Value.get_string.html">get_string</a>
+  
+    <a class="method" href="method.Value.get_uchar.html">get_uchar</a>
+  
+    <a class="method" href="method.Value.get_uint.html">get_uint</a>
+  
+    <a class="method" href="method.Value.get_uint64.html">get_uint64</a>
+  
+    <a class="method" href="method.Value.get_ulong.html">get_ulong</a>
+  
+    <a class="method" href="method.Value.get_variant.html">get_variant</a>
+  
+    <a class="method" href="method.Value.init.html">init</a>
+  
+    <a class="method" href="method.Value.init_from_instance.html">init_from_instance</a>
+  
+    <a class="method" href="method.Value.peek_pointer.html">peek_pointer</a>
+  
+    <a class="method" href="method.Value.reset.html">reset</a>
+  
+    <a class="method" href="method.Value.set_boolean.html">set_boolean</a>
+  
+    <a class="method" href="method.Value.set_boxed.html">set_boxed</a>
+  
+    <a class="method" href="method.Value.set_boxed_take_ownership.html">set_boxed_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_char.html">set_char</a>
+  
+    <a class="method" href="method.Value.set_double.html">set_double</a>
+  
+    <a class="method" href="method.Value.set_enum.html">set_enum</a>
+  
+    <a class="method" href="method.Value.set_flags.html">set_flags</a>
+  
+    <a class="method" href="method.Value.set_float.html">set_float</a>
+  
+    <a class="method" href="method.Value.set_gtype.html">set_gtype</a>
+  
+    <a class="method" href="method.Value.set_instance.html">set_instance</a>
+  
+    <a class="method" href="method.Value.set_int.html">set_int</a>
+  
+    <a class="method" href="method.Value.set_int64.html">set_int64</a>
+  
+    <a class="method" href="method.Value.set_interned_string.html">set_interned_string</a>
+  
+    <a class="method" href="method.Value.set_long.html">set_long</a>
+  
+    <a class="method" href="method.Value.set_object.html">set_object</a>
+  
+    <a class="method" href="method.Value.set_object_take_ownership.html">set_object_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_param.html">set_param</a>
+  
+    <a class="method" href="method.Value.set_param_take_ownership.html">set_param_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_pointer.html">set_pointer</a>
+  
+    <a class="method" href="method.Value.set_schar.html">set_schar</a>
+  
+    <a class="method" href="method.Value.set_static_boxed.html">set_static_boxed</a>
+  
+    <a class="method" href="method.Value.set_static_string.html">set_static_string</a>
+  
+    <a class="method" href="method.Value.set_string.html">set_string</a>
+  
+    <a class="method" href="method.Value.set_string_take_ownership.html">set_string_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_uchar.html">set_uchar</a>
+  
+    <a class="method" href="method.Value.set_uint.html">set_uint</a>
+  
+    <a class="method" href="method.Value.set_uint64.html">set_uint64</a>
+  
+    <a class="method" href="method.Value.set_ulong.html">set_ulong</a>
+  
+    <a class="method" href="method.Value.set_variant.html">set_variant</a>
+  
+    <a class="method" href="method.Value.steal_string.html">steal_string</a>
+  
+    <a class="method" href="method.Value.take_boxed.html">take_boxed</a>
+  
+    <a class="method" href="method.Value.take_object.html">take_object</a>
+  
+    <a class="method" href="method.Value.take_param.html">take_param</a>
+  
+    <a class="method" href="method.Value.take_string.html">take_string</a>
+  
+    <a class="method" href="method.Value.take_variant.html">take_variant</a>
+  
+    <a class="method" href="method.Value.transform.html">transform</a>
+  
+    <a class="method" href="method.Value.unset.html">unset</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Struct</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span>Value</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+      <div class="toggle-wrapper">
+        <h4 style="display:flex;" id="description">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gvalue.h#L99">[src]</a>
+          
+        </h4>
+
+        <pre><code><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">GValue</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">None</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</code></pre>
+
+        <div class="docblock">
+          <p>An opaque structure used to hold different types of&nbsp;values.</p>
+<p>The data within the structure has protected scope: it is accessible only
+to functions within a <code>GTypeValueTable</code> structure, or implementations of
+the g_value_*() <span class="caps">API</span>. That is, code portions which implement new fundamental&nbsp;types.</p>
+<p><code>GValue</code> users cannot make any assumptions about how data is stored
+within the 2 element <code>data</code> union, and the <code>g_type</code> member should
+only be accessed through the G_VALUE_TYPE()&nbsp;macro.</p>
+        </div>
+
+        
+        <div class="toggle-wrapper">
+          <h6 style="display:flex;">
+            Structure members
+            
+          </h6>
+
+          <div class="docblock">
+            <dl>
+            
+              <dt><code>data</code></dt>
+              <dd><p>No description available.</p></dd>
+            
+            </dl>
+          </div>
+        </div>
+        
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.Value.register_transform_func.html">g_value_register_transform_func</a></h6>
+        <div class="docblock">
+          <p>Registers a value transformation function for use in g_value_transform().
+A previously registered transformation function for <code>src_type</code> and <code>dest_type</code>
+will be&nbsp;replaced.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Value.type_compatible.html">g_value_type_compatible</a></h6>
+        <div class="docblock">
+          <p>Returns whether a <code>GValue</code> of type <code>src_type</code> can be copied into
+a <code>GValue</code> of type <code>dest_type</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Value.type_transformable.html">g_value_type_transformable</a></h6>
+        <div class="docblock">
+          <p>Check whether <code>g_value_transform()</code> is able to transform values
+of type <code>src_type</code> into values of type <code>dest_type</code>. Note that for
+the types to be transformable, they must be compatible or a
+transformation function must be&nbsp;registered.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Value.copy.html">g_value_copy</a></h6>
+          <div class="docblock">
+            <p>Copies the value of <code>src_value</code> into <code>dest_value</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.dup_boxed.html">g_value_dup_boxed</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_BOXED</code> derived <code>GValue</code>.  Upon getting,
+the boxed value is duplicated and needs to be later freed with
+g_boxed_free(), e.g. like: g_boxed_free (G_VALUE_TYPE (<code>value</code>),&nbsp;return_value);.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.dup_object.html">g_value_dup_object</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_OBJECT</code> derived <code>GValue</code>, increasing
+its reference count. If the contents of the <code>GValue</code> are <code>NULL</code>, then
+<code>NULL</code> will be&nbsp;returned.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.dup_param.html">g_value_dup_param</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_PARAM</code> <code>GValue</code>, increasing its
+reference&nbsp;count.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.dup_string.html">g_value_dup_string</a></h6>
+          <div class="docblock">
+            <p>Get a copy the contents of a <code>G_TYPE_STRING</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.dup_variant.html">g_value_dup_variant</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a variant <code>GValue</code>, increasing its refcount. The returned
+<code>GVariant</code> is never&nbsp;floating.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.fits_pointer.html">g_value_fits_pointer</a></h6>
+          <div class="docblock">
+            <p>Determines if <code>value</code> will fit inside the size of a pointer value.
+This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_boolean.html">g_value_get_boolean</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_BOOLEAN</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_boxed.html">g_value_get_boxed</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_BOXED</code> derived <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.get_char.html">g_value_get_char</a></h6>
+          <div class="docblock">
+            <p>Do not use this function; it is broken on platforms where the %char
+type is unsigned, such as <span class="caps">ARM</span> and PowerPC.  See&nbsp;g_value_get_schar().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.32</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_double.html">g_value_get_double</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_DOUBLE</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_enum.html">g_value_get_enum</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_ENUM</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_flags.html">g_value_get_flags</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_FLAGS</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_float.html">g_value_get_float</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_FLOAT</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_gtype.html">g_value_get_gtype</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_GTYPE</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_int.html">g_value_get_int</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_INT</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_int64.html">g_value_get_int64</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_INT64</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_long.html">g_value_get_long</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_LONG</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_object.html">g_value_get_object</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_OBJECT</code> derived <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_param.html">g_value_get_param</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_PARAM</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_pointer.html">g_value_get_pointer</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a pointer <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_schar.html">g_value_get_schar</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_CHAR</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.32</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_string.html">g_value_get_string</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_STRING</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_uchar.html">g_value_get_uchar</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_UCHAR</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_uint.html">g_value_get_uint</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_UINT</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_uint64.html">g_value_get_uint64</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_UINT64</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_ulong.html">g_value_get_ulong</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a <code>G_TYPE_ULONG</code> <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.get_variant.html">g_value_get_variant</a></h6>
+          <div class="docblock">
+            <p>Get the contents of a variant <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.init.html">g_value_init</a></h6>
+          <div class="docblock">
+            <p>Initializes <code>value</code> with the default value of <code>type</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.init_from_instance.html">g_value_init_from_instance</a></h6>
+          <div class="docblock">
+            <p>Initializes and sets <code>value</code> from an instantiatable type via the
+value_table&#8217;s <code>collect_value()</code> function.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.42</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.peek_pointer.html">g_value_peek_pointer</a></h6>
+          <div class="docblock">
+            <p>Returns the value contents as pointer. This function asserts that
+<code>g_value_fits_pointer()</code> returned <code>TRUE</code> for the passed in value.
+This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.reset.html">g_value_reset</a></h6>
+          <div class="docblock">
+            <p>Clears the current value in <code>value</code> and resets it to the default value
+(as if the value had just been&nbsp;initialized).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_boolean.html">g_value_set_boolean</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_BOOLEAN</code> <code>GValue</code> to <code>v_boolean</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_boxed.html">g_value_set_boxed</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_BOXED</code> derived <code>GValue</code> to <code>v_boxed</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.set_boxed_take_ownership.html">g_value_set_boxed_take_ownership</a></h6>
+          <div class="docblock">
+            <p>This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.4</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.set_char.html">g_value_set_char</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_CHAR</code> <code>GValue</code> to <code>v_char</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.32</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_double.html">g_value_set_double</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_DOUBLE</code> <code>GValue</code> to <code>v_double</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_enum.html">g_value_set_enum</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_ENUM</code> <code>GValue</code> to <code>v_enum</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_flags.html">g_value_set_flags</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_FLAGS</code> <code>GValue</code> to <code>v_flags</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_float.html">g_value_set_float</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_FLOAT</code> <code>GValue</code> to <code>v_float</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_gtype.html">g_value_set_gtype</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_GTYPE</code> <code>GValue</code> to <code>v_gtype</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_instance.html">g_value_set_instance</a></h6>
+          <div class="docblock">
+            <p>Sets <code>value</code> from an instantiatable type via the
+value_table&#8217;s <code>collect_value()</code> function.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_int.html">g_value_set_int</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_INT</code> <code>GValue</code> to <code>v_int</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_int64.html">g_value_set_int64</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_INT64</code> <code>GValue</code> to <code>v_int64</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_interned_string.html">g_value_set_interned_string</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_STRING</code> <code>GValue</code> to <code>v_string</code>.  The string is
+assumed to be static and interned (canonical, for example from
+g_intern_string()), and is thus not duplicated when setting the <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.66</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_long.html">g_value_set_long</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_LONG</code> <code>GValue</code> to <code>v_long</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_object.html">g_value_set_object</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_OBJECT</code> derived <code>GValue</code> to <code>v_object</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.set_object_take_ownership.html">g_value_set_object_take_ownership</a></h6>
+          <div class="docblock">
+            <p>This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.4</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_param.html">g_value_set_param</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_PARAM</code> <code>GValue</code> to <code>param</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.set_param_take_ownership.html">g_value_set_param_take_ownership</a></h6>
+          <div class="docblock">
+            <p>This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.4</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_pointer.html">g_value_set_pointer</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a pointer <code>GValue</code> to <code>v_pointer</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_schar.html">g_value_set_schar</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_CHAR</code> <code>GValue</code> to <code>v_char</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.32</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_static_boxed.html">g_value_set_static_boxed</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_BOXED</code> derived <code>GValue</code> to <code>v_boxed</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_static_string.html">g_value_set_static_string</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_STRING</code> <code>GValue</code> to <code>v_string</code>.
+The string is assumed to be static, and is thus not duplicated
+when setting the <code>GValue</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_string.html">g_value_set_string</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_STRING</code> <code>GValue</code> to a copy of <code>v_string</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.Value.set_string_take_ownership.html">g_value_set_string_take_ownership</a></h6>
+          <div class="docblock">
+            <p>This is an internal function introduced mainly for C&nbsp;marshallers.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.4</span>&nbsp;</p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_uchar.html">g_value_set_uchar</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_UCHAR</code> <code>GValue</code> to <code>v_uchar</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_uint.html">g_value_set_uint</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_UINT</code> <code>GValue</code> to <code>v_uint</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_uint64.html">g_value_set_uint64</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_UINT64</code> <code>GValue</code> to <code>v_uint64</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_ulong.html">g_value_set_ulong</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a <code>G_TYPE_ULONG</code> <code>GValue</code> to <code>v_ulong</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.set_variant.html">g_value_set_variant</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a variant <code>GValue</code> to <code>variant</code>.
+If the variant is floating, it is&nbsp;consumed.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.steal_string.html">g_value_steal_string</a></h6>
+          <div class="docblock">
+            <p>Steal ownership on contents of a <code>G_TYPE_STRING</code> <code>GValue</code>.
+As a result of this operation the value&#8217;s contents will be reset to <code>NULL</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.80</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.take_boxed.html">g_value_take_boxed</a></h6>
+          <div class="docblock">
+            <p>Sets the contents of a <code>G_TYPE_BOXED</code> derived <code>GValue</code> to <code>v_boxed</code>
+and takes over the ownership of the caller’s reference to <code>v_boxed</code>;
+the caller doesn’t have to unref it any&nbsp;more.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.take_object.html">g_value_take_object</a></h6>
+          <div class="docblock">
+            <p>Sets the contents of a <code>G_TYPE_OBJECT</code> derived <code>GValue</code> to <code>v_object</code>
+and takes over the ownership of the caller’s reference to <code>v_object</code>;
+the caller doesn’t have to unref it any more (i.e. the reference
+count of the object is not&nbsp;increased).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.take_param.html">g_value_take_param</a></h6>
+          <div class="docblock">
+            <p>Sets the contents of a <code>G_TYPE_PARAM</code> <code>GValue</code> to <code>param</code> and takes
+over the ownership of the caller’s reference to <code>param</code>; the caller
+doesn’t have to unref it any&nbsp;more.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.take_string.html">g_value_take_string</a></h6>
+          <div class="docblock">
+            <p>Sets the contents of a <code>G_TYPE_STRING</code> <code>GValue</code> to <code>v_string</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.take_variant.html">g_value_take_variant</a></h6>
+          <div class="docblock">
+            <p>Set the contents of a variant <code>GValue</code> to <code>variant</code>, and takes over
+the ownership of the caller&#8217;s reference to <code>variant</code>;
+the caller doesn&#8217;t have to unref it any more (i.e. the reference
+count of the variant is not&nbsp;increased).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.transform.html">g_value_transform</a></h6>
+          <div class="docblock">
+            <p>Tries to cast the contents of <code>src_value</code> into a type appropriate
+to store in <code>dest_value</code>, e.g. to transform a <code>G_TYPE_INT</code> value
+into a <code>G_TYPE_FLOAT</code> value. Performing transformations between
+value types might incur precision lossage. Especially
+transformations into strings might reveal seemingly arbitrary
+results and shouldn&#8217;t be relied upon for production code (such
+as rcfile value or object property&nbsp;serialization).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Value.unset.html">g_value_unset</a></h6>
+          <div class="docblock">
+            <p>Clears the current value in <code>value</code> (if any) and &#8220;unsets&#8221; the type,
+this releases all resources associated with this GValue. An unset
+value is the same as an uninitialized (zero-filled) <code>GValue</code>
+structure.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/struct.Value.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:24 GMT -->
+</html>

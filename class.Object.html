@@ -1,0 +1,1428 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/class.Object.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:55:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.Object</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta property="og:title" content="GObject.Object"/>
+  <meta property="og:description" content="Reference for GObject.Object"/>
+  <meta name="twitter:title" content="GObject.Object"/>
+  <meta name="twitter:description" content="Reference for GObject.Object"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Object.html#description">Object</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.Object.new.html">new</a>
+  
+    <a class="ctor" href="ctor.Object.new_valist.html">new_valist</a>
+  
+    <a class="ctor" href="ctor.Object.new_with_properties.html">new_with_properties</a>
+  
+    <a class="ctor" href="ctor.Object.newv.html">newv</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.Object.compat_control.html">compat_control</a>
+  
+    <a class="func" href="type_func.Object.interface_find_property.html">interface_find_property</a>
+  
+    <a class="func" href="type_func.Object.interface_install_property.html">interface_install_property</a>
+  
+    <a class="func" href="type_func.Object.interface_list_properties.html">interface_list_properties</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Object.add_toggle_ref.html">add_toggle_ref</a>
+  
+    <a class="method" href="method.Object.add_weak_pointer.html">add_weak_pointer</a>
+  
+    <a class="method" href="method.Object.bind_property.html">bind_property</a>
+  
+    <a class="method" href="method.Object.bind_property_full.html">bind_property_full</a>
+  
+    <a class="method" href="method.Object.bind_property_with_closures.html">bind_property_with_closures</a>
+  
+    <a class="method" href="method.Object.connect.html">connect</a>
+  
+    <a class="method" href="method.Object.disconnect.html">disconnect</a>
+  
+    <a class="method" href="method.Object.dup_data.html">dup_data</a>
+  
+    <a class="method" href="method.Object.dup_qdata.html">dup_qdata</a>
+  
+    <a class="method" href="method.Object.force_floating.html">force_floating</a>
+  
+    <a class="method" href="method.Object.freeze_notify.html">freeze_notify</a>
+  
+    <a class="method" href="method.Object.get.html">get</a>
+  
+    <a class="method" href="method.Object.get_data.html">get_data</a>
+  
+    <a class="method" href="method.Object.get_property.html">get_property</a>
+  
+    <a class="method" href="method.Object.get_qdata.html">get_qdata</a>
+  
+    <a class="method" href="method.Object.get_valist.html">get_valist</a>
+  
+    <a class="method" href="method.Object.getv.html">getv</a>
+  
+    <a class="method" href="method.Object.is_floating.html">is_floating</a>
+  
+    <a class="method" href="method.Object.notify.html">notify</a>
+  
+    <a class="method" href="method.Object.notify_by_pspec.html">notify_by_pspec</a>
+  
+    <a class="method" href="method.Object.ref.html">ref</a>
+  
+    <a class="method" href="method.Object.ref_sink.html">ref_sink</a>
+  
+    <a class="method" href="method.Object.remove_toggle_ref.html">remove_toggle_ref</a>
+  
+    <a class="method" href="method.Object.remove_weak_pointer.html">remove_weak_pointer</a>
+  
+    <a class="method" href="method.Object.replace_data.html">replace_data</a>
+  
+    <a class="method" href="method.Object.replace_qdata.html">replace_qdata</a>
+  
+    <a class="method" href="method.Object.run_dispose.html">run_dispose</a>
+  
+    <a class="method" href="method.Object.set.html">set</a>
+  
+    <a class="method" href="method.Object.set_data.html">set_data</a>
+  
+    <a class="method" href="method.Object.set_data_full.html">set_data_full</a>
+  
+    <a class="method" href="method.Object.set_property.html">set_property</a>
+  
+    <a class="method" href="method.Object.set_qdata.html">set_qdata</a>
+  
+    <a class="method" href="method.Object.set_qdata_full.html">set_qdata_full</a>
+  
+    <a class="method" href="method.Object.set_valist.html">set_valist</a>
+  
+    <a class="method" href="method.Object.setv.html">setv</a>
+  
+    <a class="method" href="method.Object.steal_data.html">steal_data</a>
+  
+    <a class="method" href="method.Object.steal_qdata.html">steal_qdata</a>
+  
+    <a class="method" href="method.Object.take_ref.html">take_ref</a>
+  
+    <a class="method" href="method.Object.thaw_notify.html">thaw_notify</a>
+  
+    <a class="method" href="method.Object.unref.html">unref</a>
+  
+    <a class="method" href="method.Object.watch_closure.html">watch_closure</a>
+  
+    <a class="method" href="method.Object.weak_ref.html">weak_ref</a>
+  
+    <a class="method" href="method.Object.weak_unref.html">weak_unref</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.Object.notify.html">notify</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Class methods</h5>
+  <div class="links">
+  
+    <a class="method" href="class_method.Object.find_property.html">find_property</a>
+  
+    <a class="method" href="class_method.Object.install_properties.html">install_properties</a>
+  
+    <a class="method" href="class_method.Object.install_property.html">install_property</a>
+  
+    <a class="method" href="class_method.Object.list_properties.html">list_properties</a>
+  
+    <a class="method" href="class_method.Object.override_property.html">override_property</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Object.constructed.html">constructed</a>
+  
+    <a class="method" href="vfunc.Object.dispatch_properties_changed.html">dispatch_properties_changed</a>
+  
+    <a class="method" href="vfunc.Object.dispose.html">dispose</a>
+  
+    <a class="method" href="vfunc.Object.finalize.html">finalize</a>
+  
+    <a class="method" href="vfunc.Object.get_property.html">get_property</a>
+  
+    <a class="method" href="vfunc.Object.notify.html">notify</a>
+  
+    <a class="method" href="vfunc.Object.set_property.html">set_property</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index-2.html">GObject</a><span class="sep" role="presentation"></span>Object</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gobject.c#L40">[src]</a>
+          
+        </h4>
+
+        <pre><code>class GObject.Object : GObject.TypeInstance
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>The base object&nbsp;type.</p>
+<p><code>GObject</code> is the fundamental type providing the common attributes and
+methods for all object types in <span class="caps">GTK</span>, Pango and other libraries
+based on GObject. The <code>GObject</code> class provides methods for object
+construction and destruction, property access methods, and signal
+support. Signals are described in detail&nbsp;[here][gobject-Signals].</p>
+<p>For a tutorial on implementing a new <code>GObject</code> class, see <a href="tutorial.html#how-to-define-and-implement-a-new-gobject">How to define and
+implement a new GObject</a>.
+For a list of naming conventions for GObjects and their methods, see the
+<a href="concepts.html#conventions">GType conventions</a>. For the high-level concepts
+behind GObject, read
+<a href="concepts.html#instantiatable-classed-types-objects">Instantiatable classed types: Objects</a>.</p>
+<p>Since GLib 2.72, all <code>GObject</code>s are guaranteed to be aligned to at least the
+alignment of the largest basic GLib type (typically this is <code>guint64</code> or
+<code>gdouble</code>). If you need larger alignment for an element in a <code>GObject</code>, you
+should allocate it on the heap (aligned), or arrange for your <code>GObject</code> to be
+appropriately padded. This guarantee applies to the <code>GObject</code> (or derived)
+struct, the <code>GObjectClass</code> (or derived) struct, and any private data allocated
+by <code>G_ADD_PRIVATE()</code>.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+
+    
+
+    
+    <div class="descendants toggle-wrapper default-hide">
+      <h4 id="descendants">Descendants <a href="#descendants" class="anchor"></a></h4>
+      <div class="docblock">
+        <ul>
+          <li class="class"><a href="class.Binding.html" title="Binding">GBinding</a></li>
+        
+          <li class="class"><a href="class.BindingGroup.html" title="BindingGroup">GBindingGroup</a></li>
+        
+          <li class="class"><a href="class.InitiallyUnowned.html" title="InitiallyUnowned">GInitiallyUnowned</a></li>
+        
+          <li class="class"><a href="class.SignalGroup.html" title="SignalGroup">GSignalGroup</a></li>
+        
+          <li class="class"><a href="class.TypeModule.html" title="TypeModule">GTypeModule</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.Object.new.html">g_object_new</a></h6>
+          <div class="docblock">
+            <p>Creates a new instance of a <code>GObject</code> subtype and sets its&nbsp;properties.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="ctor.Object.new_valist.html">g_object_new_valist</a></h6>
+          <div class="docblock">
+            <p>Creates a new instance of a <code>GObject</code> subtype and sets its&nbsp;properties.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="ctor.Object.new_with_properties.html">g_object_new_with_properties</a></h6>
+          <div class="docblock">
+            <p>Creates a new instance of a <code>GObject</code> subtype and sets its properties using
+the provided arrays. Both arrays must have exactly <code>n_properties</code> elements,
+and the names and values correspond by&nbsp;index.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.54</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="ctor.Object.newv.html">g_object_newv</a></h6>
+          <div class="docblock">
+            <p>Creates a new instance of a <code>GObject</code> subtype and sets its&nbsp;properties.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 2.54</span>&nbsp;</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="type_func.Object.compat_control.html">g_object_compat_control</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Object.interface_find_property.html">g_object_interface_find_property</a></h6>
+        <div class="docblock">
+          <p>Find the <code>GParamSpec</code> with the given name for an
+interface. Generally, the interface vtable passed in as <code>g_iface</code>
+will be the default vtable from g_type_default_interface_ref(), or,
+if you know the interface has already been loaded,&nbsp;g_type_default_interface_peek().</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Object.interface_install_property.html">g_object_interface_install_property</a></h6>
+        <div class="docblock">
+          <p>Add a property to an interface; this is only useful for interfaces
+that are added to GObject-derived types. Adding a property to an
+interface forces all objects classes with that interface to have a
+compatible property. The compatible property could be a newly
+created <code>GParamSpec</code>, but normally
+<code>g_object_class_override_property()</code> will be used so that the object
+class only needs to provide an implementation and inherits the
+property description, default value, bounds, and so forth from the
+interface&nbsp;property.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.Object.interface_list_properties.html">g_object_interface_list_properties</a></h6>
+        <div class="docblock">
+          <p>Lists the properties of an interface.Generally, the interface
+vtable passed in as <code>g_iface</code> will be the default vtable from
+g_type_default_interface_ref(), or, if you know the interface has
+already been loaded,&nbsp;g_type_default_interface_peek().</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Object.add_toggle_ref.html">g_object_add_toggle_ref</a></h6>
+          <div class="docblock">
+            <p>Increases the reference count of the object by one and sets a
+callback to be called when all other references to the object are
+dropped, or when this is already the last reference to the object
+and another reference is&nbsp;established.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.add_weak_pointer.html">g_object_add_weak_pointer</a></h6>
+          <div class="docblock">
+            <p>Adds a weak reference from weak_pointer to <code>object</code> to indicate that
+the pointer located at <code>weak_pointer_location</code> is only valid during
+the lifetime of <code>object</code>. When the <code>object</code> is finalized,
+<code>weak_pointer</code> will be set to <code>NULL</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.bind_property.html">g_object_bind_property</a></h6>
+          <div class="docblock">
+            <p>Creates a binding between <code>source_property</code> on <code>source</code> and <code>target_property</code>
+on <code>target</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.bind_property_full.html">g_object_bind_property_full</a></h6>
+          <div class="docblock">
+            <p>Complete version of&nbsp;g_object_bind_property().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.bind_property_with_closures.html">g_object_bind_property_with_closures</a></h6>
+          <div class="docblock">
+            <p>Creates a binding between <code>source_property</code> on <code>source</code> and <code>target_property</code>
+on <code>target</code>, allowing you to set the transformation functions to be used by
+the&nbsp;binding.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.connect.html">g_object_connect</a></h6>
+          <div class="docblock">
+            <p>A convenience function to connect multiple signals at&nbsp;once.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.disconnect.html">g_object_disconnect</a></h6>
+          <div class="docblock">
+            <p>A convenience function to disconnect multiple signals at&nbsp;once.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.dup_data.html">g_object_dup_data</a></h6>
+          <div class="docblock">
+            <p>This is a variant of <code>g_object_get_data()</code> which returns
+a &#8216;duplicate&#8217; of the value. <code>dup_func</code> defines the
+meaning of &#8216;duplicate&#8217; in this context, it could e.g.
+take a reference on a ref-counted&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.34</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.dup_qdata.html">g_object_dup_qdata</a></h6>
+          <div class="docblock">
+            <p>This is a variant of <code>g_object_get_qdata()</code> which returns
+a &#8216;duplicate&#8217; of the value. <code>dup_func</code> defines the
+meaning of &#8216;duplicate&#8217; in this context, it could e.g.
+take a reference on a ref-counted&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.34</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.force_floating.html">g_object_force_floating</a></h6>
+          <div class="docblock">
+            <p>This function is intended for <code>GObject</code> implementations to re-enforce
+a [floating][floating-ref] object reference. Doing this is seldom
+required: all <code>GInitiallyUnowneds</code> are created with a floating reference
+which usually just needs to be sunken by calling&nbsp;g_object_ref_sink().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.freeze_notify.html">g_object_freeze_notify</a></h6>
+          <div class="docblock">
+            <p>Increases the freeze count on <code>object</code>. If the freeze count is
+non-zero, the emission of &#8220;notify&#8221; signals on <code>object</code> is
+stopped. The signals are queued until the freeze count is decreased
+to zero. Duplicate notifications are squashed so that at most one
+<code>GObject::notify</code> signal is emitted for each property modified while the
+object is&nbsp;frozen.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.get.html">g_object_get</a></h6>
+          <div class="docblock">
+            <p>Gets properties of an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.get_data.html">g_object_get_data</a></h6>
+          <div class="docblock">
+            <p>Gets a named field from the objects table of associations (see&nbsp;g_object_set_data()).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.get_property.html">g_object_get_property</a></h6>
+          <div class="docblock">
+            <p>Gets a property of an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.get_qdata.html">g_object_get_qdata</a></h6>
+          <div class="docblock">
+            <p>This function gets back user data pointers stored via&nbsp;g_object_set_qdata().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.get_valist.html">g_object_get_valist</a></h6>
+          <div class="docblock">
+            <p>Gets properties of an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.getv.html">g_object_getv</a></h6>
+          <div class="docblock">
+            <p>Gets <code>n_properties</code> properties for an <code>object</code>.
+Obtained properties will be set to <code>values</code>. All properties must be valid.
+Warnings will be emitted and undefined behaviour may result if invalid
+properties are passed&nbsp;in.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.54</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.is_floating.html">g_object_is_floating</a></h6>
+          <div class="docblock">
+            <p>Checks whether <code>object</code> has a [floating][floating-ref]&nbsp;reference.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.notify.html">g_object_notify</a></h6>
+          <div class="docblock">
+            <p>Emits a &#8220;notify&#8221; signal for the property <code>property_name</code> on <code>object</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.notify_by_pspec.html">g_object_notify_by_pspec</a></h6>
+          <div class="docblock">
+            <p>Emits a &#8220;notify&#8221; signal for the property specified by <code>pspec</code> on <code>object</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.26</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.ref.html">g_object_ref</a></h6>
+          <div class="docblock">
+            <p>Increases the reference count of <code>object</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.ref_sink.html">g_object_ref_sink</a></h6>
+          <div class="docblock">
+            <p>Increase the reference count of <code>object</code>, and possibly remove the
+[floating][floating-ref] reference, if <code>object</code> has a floating&nbsp;reference.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.remove_toggle_ref.html">g_object_remove_toggle_ref</a></h6>
+          <div class="docblock">
+            <p>Removes a reference added with g_object_add_toggle_ref(). The
+reference count of the object is decreased by&nbsp;one.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.remove_weak_pointer.html">g_object_remove_weak_pointer</a></h6>
+          <div class="docblock">
+            <p>Removes a weak reference from <code>object</code> that was previously added
+using g_object_add_weak_pointer(). The <code>weak_pointer_location</code> has
+to match the one used with&nbsp;g_object_add_weak_pointer().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.replace_data.html">g_object_replace_data</a></h6>
+          <div class="docblock">
+            <p>Compares the user data for the key <code>key</code> on <code>object</code> with
+<code>oldval</code>, and if they are the same, replaces <code>oldval</code> with
+<code>newval</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.34</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.replace_qdata.html">g_object_replace_qdata</a></h6>
+          <div class="docblock">
+            <p>Compares the user data for the key <code>quark</code> on <code>object</code> with
+<code>oldval</code>, and if they are the same, replaces <code>oldval</code> with
+<code>newval</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.34</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.run_dispose.html">g_object_run_dispose</a></h6>
+          <div class="docblock">
+            <p>Releases all references to other objects. This can be used to break
+reference&nbsp;cycles.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set.html">g_object_set</a></h6>
+          <div class="docblock">
+            <p>Sets properties on an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_data.html">g_object_set_data</a></h6>
+          <div class="docblock">
+            <p>Each object carries around a table of associations from
+strings to pointers.  This function lets you set an&nbsp;association.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_data_full.html">g_object_set_data_full</a></h6>
+          <div class="docblock">
+            <p>Like <code>g_object_set_data()</code> except it adds notification
+for when the association is destroyed, either by setting it
+to a different value or when the object is&nbsp;destroyed.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_property.html">g_object_set_property</a></h6>
+          <div class="docblock">
+            <p>Sets a property on an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_qdata.html">g_object_set_qdata</a></h6>
+          <div class="docblock">
+            <p>This sets an opaque, named pointer on an object.
+The name is specified through a <code>GQuark</code> (retrieved e.g. via
+g_quark_from_static_string()), and the pointer
+can be gotten back from the <code>object</code> with <code>g_object_get_qdata()</code>
+until the <code>object</code> is finalized.
+Setting a previously set user data pointer, overrides (frees)
+the old pointer set, using <code>NULL</code> as pointer essentially
+removes the data&nbsp;stored.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_qdata_full.html">g_object_set_qdata_full</a></h6>
+          <div class="docblock">
+            <p>This function works like g_object_set_qdata(), but in addition,
+a void (*destroy) (gpointer) function may be specified which is
+called with <code>data</code> as argument when the <code>object</code> is finalized, or
+the data is being overwritten by a call to <code>g_object_set_qdata()</code>
+with the same <code>quark</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.set_valist.html">g_object_set_valist</a></h6>
+          <div class="docblock">
+            <p>Sets properties on an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.setv.html">g_object_setv</a></h6>
+          <div class="docblock">
+            <p>Sets <code>n_properties</code> properties for an <code>object</code>.
+Properties to be set will be taken from <code>values</code>. All properties must be
+valid. Warnings will be emitted and undefined behaviour may result if invalid
+properties are passed&nbsp;in.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.54</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.steal_data.html">g_object_steal_data</a></h6>
+          <div class="docblock">
+            <p>Remove a specified datum from the object&#8217;s data associations,
+without invoking the association&#8217;s destroy&nbsp;handler.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.steal_qdata.html">g_object_steal_qdata</a></h6>
+          <div class="docblock">
+            <p>This function gets back user data pointers stored via
+<code>g_object_set_qdata()</code> and removes the <code>data</code> from object
+without invoking its <code>destroy()</code> function (if any was
+set).
+Usually, calling this function is only required to update
+user data pointers with a destroy notifier, for&nbsp;example:.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.take_ref.html">g_object_take_ref</a></h6>
+          <div class="docblock">
+            <p>If <code>object</code> is floating, sink it.  Otherwise, do&nbsp;nothing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.70</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.thaw_notify.html">g_object_thaw_notify</a></h6>
+          <div class="docblock">
+            <p>Reverts the effect of a previous call to
+g_object_freeze_notify(). The freeze count is decreased on <code>object</code>
+and when it reaches zero, queued &#8220;notify&#8221; signals are&nbsp;emitted.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.unref.html">g_object_unref</a></h6>
+          <div class="docblock">
+            <p>Decreases the reference count of <code>object</code>. When its reference count
+drops to 0, the object is finalized (i.e. its memory is&nbsp;freed).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.watch_closure.html">g_object_watch_closure</a></h6>
+          <div class="docblock">
+            <p>This function essentially limits the life time of the <code>closure</code> to
+the life time of the object. That is, when the object is finalized,
+the <code>closure</code> is invalidated by calling <code>g_closure_invalidate()</code> on
+it, in order to prevent invocations of the closure with a finalized
+(nonexisting) object. Also, <code>g_object_ref()</code> and <code>g_object_unref()</code> are
+added as marshal guards to the <code>closure</code>, to ensure that an extra
+reference count is held on <code>object</code> during invocation of the
+<code>closure</code>.  Usually, this function will be called on closures that
+use this <code>object</code> as closure&nbsp;data.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.weak_ref.html">g_object_weak_ref</a></h6>
+          <div class="docblock">
+            <p>Adds a weak reference callback to an object. Weak references are
+used for notification when an object is disposed. They are called
+&#8220;weak references&#8221; because they allow you to safely hold a pointer
+to an object without calling <code>g_object_ref()</code> (g_object_ref() adds a
+strong reference, that is, forces the object to stay&nbsp;alive).</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Object.weak_unref.html">g_object_weak_unref</a></h6>
+          <div class="docblock">
+            <p>Removes a weak reference callback to an&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+
+      
+    </div>
+    
+
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.Object.notify.html">GObject.Object::notify</a></h6>
+          <div class="docblock">
+            <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct GObjectObjectClass {
+  GTypeClass g_type_class;
+  GObject* (* constructor) (
+    GType type,
+    guint n_construct_properties,
+    GObjectConstructParam* construct_properties
+  );
+  void (* set_property) (
+    GObject* object,
+    guint property_id,
+    const GValue* value,
+    GParamSpec* pspec
+  );
+  void (* get_property) (
+    GObject* object,
+    guint property_id,
+    GValue* value,
+    GParamSpec* pspec
+  );
+  void (* dispose) (
+    GObject* object
+  );
+  void (* finalize) (
+    GObject* object
+  );
+  void (* dispatch_properties_changed) (
+    GObject* object,
+    guint n_pspecs,
+    GParamSpec** pspecs
+  );
+  void (* notify) (
+    GObject* object,
+    GParamSpec* pspec
+  );
+  void (* constructed) (
+    GObject* object
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>The class structure for the GObject&nbsp;type.</p>
+<div class="highlight"><pre><span></span><span class="c1">// Example of implementing a singleton using a constructor.</span>
+<span class="k">static</span><span class="w"> </span><span class="n">MySingleton</span><span class="w"> </span><span class="o">*</span><span class="n">the_singleton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+
+<span class="k">static</span><span class="w"> </span><span class="n">GObject</span><span class="o">*</span>
+<span class="nf">my_singleton_constructor</span><span class="w"> </span><span class="p">(</span><span class="n">GType</span><span class="w">                  </span><span class="n">type</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">guint</span><span class="w">                  </span><span class="n">n_construct_params</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">GObjectConstructParam</span><span class="w"> </span><span class="o">*</span><span class="n">construct_params</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GObject</span><span class="w"> </span><span class="o">*</span><span class="n">object</span><span class="p">;</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">the_singleton</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="n">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">G_OBJECT_CLASS</span><span class="w"> </span><span class="p">(</span><span class="n">parent_class</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">constructor</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="p">,</span>
+<span class="w">                                                           </span><span class="n">n_construct_params</span><span class="p">,</span>
+<span class="w">                                                           </span><span class="n">construct_params</span><span class="p">);</span>
+<span class="w">      </span><span class="n">the_singleton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MY_SINGLETON</span><span class="w"> </span><span class="p">(</span><span class="n">object</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="k">else</span>
+<span class="w">    </span><span class="n">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g_object_ref</span><span class="w"> </span><span class="p">(</span><span class="n">G_OBJECT</span><span class="w"> </span><span class="p">(</span><span class="n">the_singleton</span><span class="p">));</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">object</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>g_type_class: GTypeClass</code></dt>
+          <dd><p>The parent&nbsp;class.</p></dd>
+        
+          <dt><code>constructor: GObject* (* constructor) (
+    GType type,
+    guint n_construct_properties,
+    GObjectConstructParam* construct_properties
+  )</code></dt>
+          <dd><p>The <code>constructor</code> function is called by g_object_new () to
+ complete the object initialization after all the construction properties are
+ set. The first thing a <code>constructor</code> implementation must do is chain up to the
+ <code>constructor</code> of the parent class. Overriding <code>constructor</code> should be rarely
+ needed, e.g. to handle construct properties, or to implement&nbsp;singletons.</p></dd>
+        
+          <dt><code>set_property: void (* set_property) (
+    GObject* object,
+    guint property_id,
+    const GValue* value,
+    GParamSpec* pspec
+  )</code></dt>
+          <dd><p>The generic setter for all properties of this type. Should be
+ overridden for every type with properties. If implementations of
+ <code>set_property</code> don&#8217;t emit property change notification explicitly, this will
+ be done implicitly by the type system. However, if the notify signal is
+ emitted explicitly, the type system will not emit it a second&nbsp;time.</p></dd>
+        
+          <dt><code>get_property: void (* get_property) (
+    GObject* object,
+    guint property_id,
+    GValue* value,
+    GParamSpec* pspec
+  )</code></dt>
+          <dd><p>The generic getter for all properties of this type. Should be
+ overridden for every type with&nbsp;properties.</p></dd>
+        
+          <dt><code>dispose: void (* dispose) (
+    GObject* object
+  )</code></dt>
+          <dd><p>The <code>dispose</code> function is supposed to drop all references to other
+ objects, but keep the instance otherwise intact, so that client method
+ invocations still work. It may be run multiple times (due to reference
+ loops). Before returning, <code>dispose</code> should chain up to the <code>dispose</code> method
+ of the parent&nbsp;class.</p></dd>
+        
+          <dt><code>finalize: void (* finalize) (
+    GObject* object
+  )</code></dt>
+          <dd><p>Instance finalization function, should finish the finalization of
+ the instance begun in <code>dispose</code> and chain up to the <code>finalize</code> method of the
+ parent&nbsp;class.</p></dd>
+        
+          <dt><code>dispatch_properties_changed: void (* dispatch_properties_changed) (
+    GObject* object,
+    guint n_pspecs,
+    GParamSpec** pspecs
+  )</code></dt>
+          <dd><p>Emits property change notification for a bunch
+ of properties. Overriding <code>dispatch_properties_changed</code> should be rarely&nbsp;needed.</p></dd>
+        
+          <dt><code>notify: void (* notify) (
+    GObject* object,
+    GParamSpec* pspec
+  )</code></dt>
+          <dd><p>The class closure for the notify&nbsp;signal.</p></dd>
+        
+          <dt><code>constructed: void (* constructed) (
+    GObject* object
+  )</code></dt>
+          <dd><p>The <code>constructed</code> function is called by <code>g_object_new()</code> as the
+ final step of the object creation process.  At the point of the call, all
+ construction properties have been set on the object.  The purpose of this
+ call is to allow for object initialisation steps that can only be performed
+ after construction properties have been set.  <code>constructed</code> implementors
+ should chain up to the <code>constructed</code> call of their parent class to allow it
+ to complete its&nbsp;initialisation.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-constructed"><a href="vfunc.Object.constructed.html">GObject.ObjectClass.constructed</a></h6>
+        <div class="docblock">
+          <p>The <code>constructed</code> function is called by <code>g_object_new()</code> as the
+ final step of the object creation process.  At the point of the call, all
+ construction properties have been set on the object.  The purpose of this
+ call is to allow for object initialisation steps that can only be performed
+ after construction properties have been set.  <code>constructed</code> implementors
+ should chain up to the <code>constructed</code> call of their parent class to allow it
+ to complete its&nbsp;initialisation.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-dispatch_properties_changed"><a href="vfunc.Object.dispatch_properties_changed.html">GObject.ObjectClass.dispatch_properties_changed</a></h6>
+        <div class="docblock">
+          <p>Emits property change notification for a bunch
+ of properties. Overriding <code>dispatch_properties_changed</code> should be rarely&nbsp;needed.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-dispose"><a href="vfunc.Object.dispose.html">GObject.ObjectClass.dispose</a></h6>
+        <div class="docblock">
+          <p>The <code>dispose</code> function is supposed to drop all references to other
+ objects, but keep the instance otherwise intact, so that client method
+ invocations still work. It may be run multiple times (due to reference
+ loops). Before returning, <code>dispose</code> should chain up to the <code>dispose</code> method
+ of the parent&nbsp;class.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-finalize"><a href="vfunc.Object.finalize.html">GObject.ObjectClass.finalize</a></h6>
+        <div class="docblock">
+          <p>Instance finalization function, should finish the finalization of
+ the instance begun in <code>dispose</code> and chain up to the <code>finalize</code> method of the
+ parent&nbsp;class.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-get_property"><a href="vfunc.Object.get_property.html">GObject.ObjectClass.get_property</a></h6>
+        <div class="docblock">
+          <p>The generic getter for all properties of this type. Should be
+ overridden for every type with&nbsp;properties.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-notify"><a href="vfunc.Object.notify.html">GObject.ObjectClass.notify</a></h6>
+        <div class="docblock">
+          <p>Emits a &#8220;notify&#8221; signal for the property <code>property_name</code> on <code>object</code>.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-set_property"><a href="vfunc.Object.set_property.html">GObject.ObjectClass.set_property</a></h6>
+        <div class="docblock">
+          <p>The generic setter for all properties of this type. Should be
+ overridden for every type with properties. If implementations of
+ <code>set_property</code> don&#8217;t emit property change notification explicitly, this will
+ be done implicitly by the type system. However, if the notify signal is
+ emitted explicitly, the type system will not emit it a second&nbsp;time.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="class-methods">
+        Class methods
+        <a href="#class-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6><a href="class_method.Object.find_property.html">g_object_class_find_property</a></h6>
+        <div class="docblock">
+          <p>Looks up the <code>GParamSpec</code> for a property of a&nbsp;class.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="class_method.Object.install_properties.html">g_object_class_install_properties</a></h6>
+        <div class="docblock">
+          <p>Installs new properties from an array of <code>GParamSpecs</code>.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.26</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="class_method.Object.install_property.html">g_object_class_install_property</a></h6>
+        <div class="docblock">
+          <p>Installs a new&nbsp;property.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="class_method.Object.list_properties.html">g_object_class_list_properties</a></h6>
+        <div class="docblock">
+          <p>Get an array of <code>GParamSpec</code>* for all properties of a&nbsp;class.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="class_method.Object.override_property.html">g_object_class_override_property</a></h6>
+        <div class="docblock">
+          <p>Registers <code>property_id</code> as referring to a property with the name
+<code>name</code> in a parent class or in an interface implemented by <code>oclass</code>.
+This allows this class to &#8220;override&#8221; a property implementation in
+a parent class or to provide the implementation of a property from
+an&nbsp;interface.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="#description"><span class="link-text">Description</span></a></li>
+      
+      
+      
+      
+      
+<li class="toc-list-item"><a href="#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#class-methods"><span class="link-text">Class methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/class.Object.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:56:03 GMT -->
+</html>

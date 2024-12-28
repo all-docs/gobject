@@ -1,0 +1,336 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Value.get_int.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.Value.get_int</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta priority="og:title" content="GObject.Value.get_int"/>
+  <meta priority="og:description" content="Reference for GObject.Value.get_int"/>
+  <meta name="twitter:title" content="GObject.Value.get_int"/>
+  <meta name="twitter:description" content="Reference for GObject.Value.get_int"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="struct.Value.html">Value</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Value.copy.html">copy</a>
+  
+    <a class="method" href="method.Value.dup_boxed.html">dup_boxed</a>
+  
+    <a class="method" href="method.Value.dup_object.html">dup_object</a>
+  
+    <a class="method" href="method.Value.dup_param.html">dup_param</a>
+  
+    <a class="method" href="method.Value.dup_string.html">dup_string</a>
+  
+    <a class="method" href="method.Value.dup_variant.html">dup_variant</a>
+  
+    <a class="method" href="method.Value.fits_pointer.html">fits_pointer</a>
+  
+    <a class="method" href="method.Value.get_boolean.html">get_boolean</a>
+  
+    <a class="method" href="method.Value.get_boxed.html">get_boxed</a>
+  
+    <a class="method" href="method.Value.get_char.html">get_char</a>
+  
+    <a class="method" href="method.Value.get_double.html">get_double</a>
+  
+    <a class="method" href="method.Value.get_enum.html">get_enum</a>
+  
+    <a class="method" href="method.Value.get_flags.html">get_flags</a>
+  
+    <a class="method" href="method.Value.get_float.html">get_float</a>
+  
+    <a class="method" href="method.Value.get_gtype.html">get_gtype</a>
+  
+    <a class="method current" href="method.Value.get_int.html">get_int</a>
+  
+    <a class="method" href="method.Value.get_int64.html">get_int64</a>
+  
+    <a class="method" href="method.Value.get_long.html">get_long</a>
+  
+    <a class="method" href="method.Value.get_object.html">get_object</a>
+  
+    <a class="method" href="method.Value.get_param.html">get_param</a>
+  
+    <a class="method" href="method.Value.get_pointer.html">get_pointer</a>
+  
+    <a class="method" href="method.Value.get_schar.html">get_schar</a>
+  
+    <a class="method" href="method.Value.get_string.html">get_string</a>
+  
+    <a class="method" href="method.Value.get_uchar.html">get_uchar</a>
+  
+    <a class="method" href="method.Value.get_uint.html">get_uint</a>
+  
+    <a class="method" href="method.Value.get_uint64.html">get_uint64</a>
+  
+    <a class="method" href="method.Value.get_ulong.html">get_ulong</a>
+  
+    <a class="method" href="method.Value.get_variant.html">get_variant</a>
+  
+    <a class="method" href="method.Value.init.html">init</a>
+  
+    <a class="method" href="method.Value.init_from_instance.html">init_from_instance</a>
+  
+    <a class="method" href="method.Value.peek_pointer.html">peek_pointer</a>
+  
+    <a class="method" href="method.Value.reset.html">reset</a>
+  
+    <a class="method" href="method.Value.set_boolean.html">set_boolean</a>
+  
+    <a class="method" href="method.Value.set_boxed.html">set_boxed</a>
+  
+    <a class="method" href="method.Value.set_boxed_take_ownership.html">set_boxed_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_char.html">set_char</a>
+  
+    <a class="method" href="method.Value.set_double.html">set_double</a>
+  
+    <a class="method" href="method.Value.set_enum.html">set_enum</a>
+  
+    <a class="method" href="method.Value.set_flags.html">set_flags</a>
+  
+    <a class="method" href="method.Value.set_float.html">set_float</a>
+  
+    <a class="method" href="method.Value.set_gtype.html">set_gtype</a>
+  
+    <a class="method" href="method.Value.set_instance.html">set_instance</a>
+  
+    <a class="method" href="method.Value.set_int.html">set_int</a>
+  
+    <a class="method" href="method.Value.set_int64.html">set_int64</a>
+  
+    <a class="method" href="method.Value.set_interned_string.html">set_interned_string</a>
+  
+    <a class="method" href="method.Value.set_long.html">set_long</a>
+  
+    <a class="method" href="method.Value.set_object.html">set_object</a>
+  
+    <a class="method" href="method.Value.set_object_take_ownership.html">set_object_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_param.html">set_param</a>
+  
+    <a class="method" href="method.Value.set_param_take_ownership.html">set_param_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_pointer.html">set_pointer</a>
+  
+    <a class="method" href="method.Value.set_schar.html">set_schar</a>
+  
+    <a class="method" href="method.Value.set_static_boxed.html">set_static_boxed</a>
+  
+    <a class="method" href="method.Value.set_static_string.html">set_static_string</a>
+  
+    <a class="method" href="method.Value.set_string.html">set_string</a>
+  
+    <a class="method" href="method.Value.set_string_take_ownership.html">set_string_take_ownership</a>
+  
+    <a class="method" href="method.Value.set_uchar.html">set_uchar</a>
+  
+    <a class="method" href="method.Value.set_uint.html">set_uint</a>
+  
+    <a class="method" href="method.Value.set_uint64.html">set_uint64</a>
+  
+    <a class="method" href="method.Value.set_ulong.html">set_ulong</a>
+  
+    <a class="method" href="method.Value.set_variant.html">set_variant</a>
+  
+    <a class="method" href="method.Value.steal_string.html">steal_string</a>
+  
+    <a class="method" href="method.Value.take_boxed.html">take_boxed</a>
+  
+    <a class="method" href="method.Value.take_object.html">take_object</a>
+  
+    <a class="method" href="method.Value.take_param.html">take_param</a>
+  
+    <a class="method" href="method.Value.take_string.html">take_string</a>
+  
+    <a class="method" href="method.Value.take_variant.html">take_variant</a>
+  
+    <a class="method" href="method.Value.transform.html">transform</a>
+  
+    <a class="method" href="method.Value.unset.html">unset</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span><a href="struct.Value.html">Value</a><span class="sep"></span>get_int</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gvaluetypes.h#L217">[src]</a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gint</span>
+<span class="n">g_value_get_int</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">GValue</span><span class="o">*</span><span class="w"> </span><span class="n">value</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gvaluetypes.c#L781">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>Get the contents of a <code>G_TYPE_INT</code> <code>GValue</code>.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <div class="returns">
+          <div class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gint</code></p>
+            <p>Integer contents of <code>value</code>.</p>
+          </div>
+          <div>
+            <table>
+            
+            
+            
+            
+            
+            
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Value.get_int.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:48 GMT -->
+</html>

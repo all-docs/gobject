@@ -1,0 +1,402 @@
+<!--
+SPDX-FileCopyrightText: GLib Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Object.replace_data.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>GObject.Object.replace_data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+
+  
+  <meta priority="og:title" content="GObject.Object.replace_data"/>
+  <meta priority="og:description" content="Reference for GObject.Object.replace_data"/>
+  <meta name="twitter:title" content="GObject.Object.replace_data"/>
+  <meta name="twitter:description" content="Reference for GObject.Object.replace_data"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="GObject" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index-2.html">GObject</a></h3>
+        <p>API Version: 2.0</p>
+        
+        <p>Library Version: 2.83.2</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.Object.html">Object</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Object.add_toggle_ref.html">add_toggle_ref</a>
+  
+    <a class="method" href="method.Object.add_weak_pointer.html">add_weak_pointer</a>
+  
+    <a class="method" href="method.Object.bind_property.html">bind_property</a>
+  
+    <a class="method" href="method.Object.bind_property_full.html">bind_property_full</a>
+  
+    <a class="method" href="method.Object.bind_property_with_closures.html">bind_property_with_closures</a>
+  
+    <a class="method" href="method.Object.connect.html">connect</a>
+  
+    <a class="method" href="method.Object.disconnect.html">disconnect</a>
+  
+    <a class="method" href="method.Object.dup_data.html">dup_data</a>
+  
+    <a class="method" href="method.Object.dup_qdata.html">dup_qdata</a>
+  
+    <a class="method" href="method.Object.force_floating.html">force_floating</a>
+  
+    <a class="method" href="method.Object.freeze_notify.html">freeze_notify</a>
+  
+    <a class="method" href="method.Object.get.html">get</a>
+  
+    <a class="method" href="method.Object.get_data.html">get_data</a>
+  
+    <a class="method" href="method.Object.get_property.html">get_property</a>
+  
+    <a class="method" href="method.Object.get_qdata.html">get_qdata</a>
+  
+    <a class="method" href="method.Object.get_valist.html">get_valist</a>
+  
+    <a class="method" href="method.Object.getv.html">getv</a>
+  
+    <a class="method" href="method.Object.is_floating.html">is_floating</a>
+  
+    <a class="method" href="method.Object.notify.html">notify</a>
+  
+    <a class="method" href="method.Object.notify_by_pspec.html">notify_by_pspec</a>
+  
+    <a class="method" href="method.Object.ref.html">ref</a>
+  
+    <a class="method" href="method.Object.ref_sink.html">ref_sink</a>
+  
+    <a class="method" href="method.Object.remove_toggle_ref.html">remove_toggle_ref</a>
+  
+    <a class="method" href="method.Object.remove_weak_pointer.html">remove_weak_pointer</a>
+  
+    <a class="method current" href="method.Object.replace_data.html">replace_data</a>
+  
+    <a class="method" href="method.Object.replace_qdata.html">replace_qdata</a>
+  
+    <a class="method" href="method.Object.run_dispose.html">run_dispose</a>
+  
+    <a class="method" href="method.Object.set.html">set</a>
+  
+    <a class="method" href="method.Object.set_data.html">set_data</a>
+  
+    <a class="method" href="method.Object.set_data_full.html">set_data_full</a>
+  
+    <a class="method" href="method.Object.set_property.html">set_property</a>
+  
+    <a class="method" href="method.Object.set_qdata.html">set_qdata</a>
+  
+    <a class="method" href="method.Object.set_qdata_full.html">set_qdata_full</a>
+  
+    <a class="method" href="method.Object.set_valist.html">set_valist</a>
+  
+    <a class="method" href="method.Object.setv.html">setv</a>
+  
+    <a class="method" href="method.Object.steal_data.html">steal_data</a>
+  
+    <a class="method" href="method.Object.steal_qdata.html">steal_qdata</a>
+  
+    <a class="method" href="method.Object.take_ref.html">take_ref</a>
+  
+    <a class="method" href="method.Object.thaw_notify.html">thaw_notify</a>
+  
+    <a class="method" href="method.Object.unref.html">unref</a>
+  
+    <a class="method" href="method.Object.watch_closure.html">watch_closure</a>
+  
+    <a class="method" href="method.Object.weak_ref.html">weak_ref</a>
+  
+    <a class="method" href="method.Object.weak_unref.html">weak_unref</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.1</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index-2.html">GObject</a><span class="sep"></span><a href="class.Object.html">Object</a><span class="sep"></span>replace_data</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p><span class="emblem available">since: 2.34</span></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="#declaration"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gobject.h#L615">[src]</a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="n">gboolean</span>
+<span class="n">g_object_replace_data</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">GObject</span><span class="o">*</span><span class="w"> </span><span class="n">object</span><span class="p">,</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">gchar</span><span class="o">*</span><span class="w"> </span><span class="n">key</span><span class="p">,</span>
+<span class="w">  </span><span class="n">gpointer</span><span class="w"> </span><span class="n">oldval</span><span class="p">,</span>
+<span class="w">  </span><span class="n">gpointer</span><span class="w"> </span><span class="n">newval</span><span class="p">,</span>
+<span class="w">  </span><span class="n">GDestroyNotify</span><span class="w"> </span><span class="n">destroy</span><span class="p">,</span>
+<span class="w">  </span><span class="n">GDestroyNotify</span><span class="o">*</span><span class="w"> </span><span class="n">old_destroy</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="#description"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/glib/-/blob/main/gobject/gobject.c#L4830">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>Compares the user data for the key <code>key</code> on <code>object</code> with
+<code>oldval</code>, and if they are the same, replaces <code>oldval</code> with
+<code>newval</code>.</p>
+<p>This is like a typical atomic compare-and-exchange
+operation, for user data on an&nbsp;object.</p>
+<p>If the previous value was replaced then ownership of the
+old value (<code>oldval</code>) is passed to the caller, including
+the registered destroy notify for it (passed out in <code>old_destroy</code>).
+It’s up to the caller to free this as needed, which may
+or may not include using <code>old_destroy</code> as sometimes replacement
+should not destroy the object in the normal&nbsp;way.</p>
+<p>See <code>g_object_set_data()</code> for guidance on using a small, bounded set of values
+for <code>key</code>.</p>
+      </div>
+
+      <div class="docblock">
+        
+        <p>Available since: 2.34</p>
+        
+        
+        <p>This method is not directly available to language bindings.</p>
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+          <dt class="arg-name"><code>key</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>const gchar*</code></p>
+            <p>A string, naming the user data&nbsp;pointer.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the method.</td></tr>
+            <tr><td>The value is a NUL terminated UTF-8 string.</td></tr>
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>oldval</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gpointer</code></p>
+            <p>The old value to compare&nbsp;against.</p>
+            <table>
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the method.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>newval</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gpointer</code></p>
+            <p>The new&nbsp;value.</p>
+            <table>
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the method.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>destroy</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="javascript:void(0)" data-link="callback.DestroyNotify.html" data-namespace="GLib" class="external"><code>GDestroyNotify</code></a></p>
+            <p>A destroy notify for the new&nbsp;value.</p>
+            <table>
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            
+            
+            
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>old_destroy</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="javascript:void(0)" data-link="callback.DestroyNotify.html" data-namespace="GLib" class="external"><code>GDestroyNotify</code></a></p>
+            <p>Destroy notify for the existing&nbsp;value.</p>
+            <table>
+            <tr><td title="direction: out">The argument will be set by the function.</td></tr>
+            
+            
+            <tr><td>The argument can be <code>NULL</code>.</td></tr>
+            
+            
+            
+            <tr><td title="transfer: none">The returned data is owned by the instance.</td></tr>
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+    <div class="return-value toggle-wrapper">
+      <h4 id="return-value">
+        Return value
+        <a href="#return-value" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <div class="returns">
+          <div class="arg-description">
+            <p><em>Type:</em>&nbsp;<code>gboolean</code></p>
+            <p><code>TRUE</code> if the existing value for <code>key</code> was replaced
+ by <code>newval</code>, <code>FALSE</code> otherwise.</p>
+          </div>
+          <div>
+            <table>
+            
+            
+            
+            
+            
+            
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+
+<!-- Mirrored from docs.gtk.org/gobject/method.Object.replace_data.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:58:45 GMT -->
+</html>
